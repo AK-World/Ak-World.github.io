@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="/main/css/akworld.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
@@ -17,12 +19,13 @@ body, html {
     padding: 16px;
     }
 </style>
-   <script>
-    $(window).load(function(){
-     $('.loader').fadeOut();
-}); 
-   </script>
-  <div class="loader"></div>
+<script type="text/javascript">
+ 	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+ </script>
 </head>
  <body>
 <!-- Navbar (sit on top) -->
