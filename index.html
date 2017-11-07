@@ -17,7 +17,12 @@ body, html {
     }
 </style>
 <body>
-
+<div class="loader"></div>
+<script>
+ $(window).load(function(){
+     $('.loader').fadeOut();
+});
+</script>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
