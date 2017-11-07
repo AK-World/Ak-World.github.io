@@ -1,6 +1,7 @@
  <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+ <head>
+<title>AK World</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/main/css/akworld.css">
@@ -16,8 +17,14 @@ body, html {
     padding: 16px;
     }
 </style>
+  <script>
+    $(window).load(function(){
+     $('.loader').fadeOut();
+}); 
+   </script>
+</head>
 <body>
-<div class="loader"></div>
+<div class="loader">
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
@@ -63,9 +70,7 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
  
- $(window).load(function(){
-     $('.loader').fadeOut();
-}); 
 </script>
+ </div>
 </body>
 </html>
